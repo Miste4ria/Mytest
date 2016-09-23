@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> VISUALIZAR VIDEO!</title>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<img id="play">
+	<div id="logger"></div>
+	
+	<script>
+		var socket = io();
+		socket.on('stream', function(image) {
+			var img = document.getElementById("play");
+			img.src = image;
+			
+			//var log = document.getElementById("logger");
+			//log.text(image);
+			
+			//$("#logger").text(image);
+		});
+	</script>
+</body>
+</html>

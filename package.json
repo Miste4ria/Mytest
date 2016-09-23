@@ -1,0 +1,10 @@
+{
+  "name": "Wcam-Live",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "log": "*",
+    "morgan": "*",
+    "socket.io": "^1.4.5"
+  }
+}
